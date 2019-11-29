@@ -1,5 +1,14 @@
 // Run this example with `node examples/chaining.js`
 // It will succeed most of the time, but fail occasionally to demonstrate error handling
+/* Results:
+  Searching for user Dan from findUserInDatabase
+  Found 0 record(s)
+  Hashing Dan's password chickennuggets in hashPassword
+  Done hashing! Hashed password: 10101010101
+  Saving secured user Dan with hashed password 10101010101 in createAndSaveUser
+  Successfully created and saved user Dan
+  All done!
+ */
 
 var Promise = require('bluebird');
 var db = Promise.promisifyAll(require('../lib/db'));
