@@ -38,7 +38,7 @@ var getStatusCodeAsync = function(url) {
 
       // An alternate way to implement our error guard
       if (err) {
-        reject(err);
+        return reject(err);
       }
 
       resolve(response.statusCode);
